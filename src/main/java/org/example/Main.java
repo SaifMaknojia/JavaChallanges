@@ -6,9 +6,10 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("console log");
         findEvenNumber();
+        sumOfNumber(12345);
     }
 
-    //Write a program to print all even numbers between 1 to 100.
+    //Write a program to print all even numbers between 1 - 100.
     public static void findEvenNumber(){
         for(int i = 1; i <= 100; i++){
             if(i % 2 == 0){
@@ -16,5 +17,19 @@ public class Main {
             }
         }
     }
+
+    //Write a program to find sum of first and last digit of a number.
+    public static void sumOfNumber(int number){
+        int total = 0;
+
+        while(number != 0) {
+            total = total + number % 10;
+            number = number / 10 ;
+        }
+        System.out.println(total);
+    }
+
+
+
 
 }
