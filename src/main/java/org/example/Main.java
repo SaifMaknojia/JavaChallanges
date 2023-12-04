@@ -6,12 +6,12 @@ import java.util.Scanner;
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        System.out.println("console log");
-        findEvenNumber();
+      //  findEvenNumber();
 
         //feel to change any Parameter's you want.
-        sumOfNumber(12345);
+        sumOfNumber(1234);
         multiplicationTable(5);
+        productsOfDigits(4513);
     }
 
     //Write a program to print all even numbers between 1 - 100.
@@ -33,12 +33,33 @@ public class Main {
     //Write a program to find sum of first and last digit of a number.
     public static void sumOfNumber(int number){
         int total = 0;
-
         while(number != 0) {
             total = total + number % 10;
             number = number / 10 ;
         }
         System.out.println(total);
     }
+
+    // Write a program to calculate product of digits of a number.
+
+    public static void productsOfDigits(int number){
+        // 1. run the loop till the number divided by 10 is 0;
+        int product = 1;
+
+        while (number != 0){
+            product = product * (number % 10);
+
+            number = number / 10;
+
+         }
+        System.out.println(product);
+    }
+
+
+    // Write a program to print a number in words.
+
+    // Write a program to check whether a number is a Prime number or not
+        //1. run a loop till the input and check if its divisible by previous numbers.
+
 
 }
